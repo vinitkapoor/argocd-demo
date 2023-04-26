@@ -1,1 +1,1 @@
-# Argocd demo
+Hello, world!
