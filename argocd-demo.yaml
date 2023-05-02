@@ -5,13 +5,12 @@ metadata:
   namespace: argocd
 spec:
   destination:
-   # name: kind-gitops-cluster
     namespace: default
     server: https://kubernetes.default.svc
   project: default
   source:
     path: .
-    repoURL: https://github.com/NiniiGit/argocd-demo.git #https://github.com/argoproj/argocd-example-apps.git
+    repoURL: https://github.com/NiniiGit/argocd-demo.git
     targetRevision: HEAD
   project: default
   syncPolicy:
