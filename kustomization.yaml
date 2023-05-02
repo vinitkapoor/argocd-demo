@@ -6,3 +6,4 @@ namespace: argocd
 resources:
   - argocd-demo.yaml
   - https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+  - podinfo-demo-argo.yaml
