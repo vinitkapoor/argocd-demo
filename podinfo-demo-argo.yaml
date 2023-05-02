@@ -12,12 +12,11 @@ spec:
     helm:
       valueFiles:
       - values.yaml
-   path: ./charts/podinfo
-   repoURL: https://github.com/NiniiGit/podinfo-demo.git
-   targetRevision: HEAD
-   syncPolicy:
-     automated:
-       prune: true
+    path: ./charts/podinfo
+    repoURL: https://github.com/NiniiGit/podinfo-demo.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
       selfHeal: true
-
 
