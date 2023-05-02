@@ -13,9 +13,6 @@ spec:
     path: .
     repoURL: https://github.com/NiniiGit/argocd-demo.git #https://github.com/argoproj/argocd-example-apps.git
     targetRevision: HEAD
-    directory:
-      recurse: true
-      jsonnet: {}
   project: default
   syncPolicy:
     automated:
