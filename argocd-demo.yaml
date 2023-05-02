@@ -12,7 +12,7 @@ spec:
     path: .
     repoURL: https://github.com/NiniiGit/argocd-demo.git
     targetRevision: HEAD
-  project: default
+  #project: default
   syncPolicy:
     automated:
       prune: true
