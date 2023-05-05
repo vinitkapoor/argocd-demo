@@ -13,7 +13,7 @@ spec:
       valueFiles:
       - values.yaml
     path: ./charts/podinfo
-    repoURL: https://github.com/NiniiGit/podinfo-demo.git
+    repoURL: https://github.com/<your-repo-name>/podinfo-demo.git
     targetRevision: HEAD
   syncPolicy:
     automated:
