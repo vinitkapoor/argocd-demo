@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: podinfo-demo-production
+  namespace: argocd
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: production
+  project: default
+  source:
+    helm:
+      valueFiles:
+      - custom-values/production/values.yaml
+    path: ./charts/podinfo
+    repoURL: https://github.com/<your-github-name>/podinfo-demo.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+      syncWave:
+        interval: 1m
